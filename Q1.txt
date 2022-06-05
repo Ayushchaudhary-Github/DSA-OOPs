@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main(){
+	int n,i,j,mat[n][n];
+	printf("enter the size of matrix : \n");
+	scanf("%d",&n);
+	printf("Enter the matrix : \n");
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+			scanf("%d",&mat[i][j]);
+		}
+	}
+	printf("Entered matrix is : \n");
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+			printf("%d ",mat[i][j]);
+		}
+		printf("\n");
+	}
+	int ldiagnal=0;
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+		if(i==j){
+		ldiagnal += mat[i][j];
+	}
+	}	
+	}
+	printf("%d\n",ldiagnal);
+	int rdiagnal=0;
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+		if((i+j)==(n-1)){
+		rdiagnal += mat[i][j];
+	}
+	}	
+	}
+	printf("%d\n",rdiagnal);
+	int sub = ldiagnal-rdiagnal;
+	printf("sum of diagnals is %d \n",abs(sub));
+	
+}
