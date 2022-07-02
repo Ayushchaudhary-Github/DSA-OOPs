@@ -1,8 +1,8 @@
 
 // Java program to ReverseString using StringBuilder
-import java.lang.*;
-import java.io.*;
-import java.util.*;
+//import java.lang.*;
+//import java.io.*;
+//import java.util.*;
  
 // Class of ReverseString
 class ReverseString {
