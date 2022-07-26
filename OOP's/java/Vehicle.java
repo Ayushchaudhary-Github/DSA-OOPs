@@ -1,16 +1,17 @@
 //overriding
 class Vehicle {
-    void run(){
+    void run() {
         System.out.println("Vehicle is running");
     }
-}
 
-class Main extends Vehicle{
-    void run(){
-        System.out.println("Main is running");
-    }
-    public  static void main(String[] args){
-        Main m = new Main();
-        m.run();
+    class common extends Vehicle {
+        void run() {
+            System.out.println("Main is running");
+        }
+
+        public static void main(String[] args) {
+            common m = new common();
+            m.run();
+        }
     }
 }
